@@ -1,0 +1,548 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  border: none;
+  outline: none;
+  scroll-behavior: smooth;
+  font-family: -apple-system, sans-serif;
+}
+:root {
+  --bg-color: #000; /* this the color of background we assign it in var called "bg-color"*/
+  --snd-bg-color: #111; /* this the secondary color of background we assign it in var called "snd-color"*/
+  --text-color: #fff; /* this the color of the text we assign it in var called "text-color"*/
+  --main-color: #45ffca; /* this a  special color can use with btn links, we assign it in var called "main-color"*/
+}
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+section {
+  min-height: 100vh;
+  padding: 10rem 8% 2rem;
+}
+/* header section style */
+
+header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  right: 0;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 9%;
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(10px);
+  transition: all 0.5s ease;
+}
+.logo {
+  font-size: 3rem;
+  color: var(--text-color);
+  font-weight: 800;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+.logo:hover {
+  transform: scale(1.1);
+}
+span {
+  color: var(--main-color);
+}
+.nav-bar {
+  display: flex;
+}
+.nav-bar a {
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: var(--text-color);
+  margin-left: 4rem;
+  transition: all 0.5s ease;
+  border-bottom: 3px solid transparent;
+}
+.nav-bar a:hover,
+.nav-bar.active {
+  color: var(--main-color);
+  border-bottom: 3px solid var(--main-color);
+}
+.nav-btn {
+  display: inline-block; /* Allows height and width while staying inline */
+  padding: 1rem 2.8rem;
+  background: transparent;
+  color: var(--main-color);
+  border: 2px solid var(--main-color);
+  border-radius: 1rem;
+  font-size: 1.6rem;
+  font-weight: 600;
+  transition: all 0.5s ease; /* Fixed syntax */
+}
+
+.nav-btn:hover {
+  background-color: var(--main-color);
+  color: var(--text-color);
+  box-shadow: 0 0 18px var(--main-color);
+}
+#menu-icon {
+  font-size: 3.6rem;
+  color: var(--main-color);
+  cursor: pointer;
+  display: none;
+}
+/* home section style */
+
+.home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.home-content h3 {
+  font-size: 5rem;
+  font-weight: 700;
+}
+.home-content span {
+  font-size: 4rem;
+  font-weight: 550;
+}
+span {
+  color: var(--main-color);
+}
+.home-content h1 {
+  font-size: 5.6rem;
+  font-weight: 700;
+  line-height: 1.3;
+}
+.home-img img {
+  width: 45vw;
+  max-width: 80%;
+}
+.home-img::before {
+  content: "FITNESS";
+  position: absolute;
+  top: 10%;
+  left: 30%;
+  transform: translateX(-50%);
+  font-size: 20rem;
+  font-weight: 400;
+  line-height: 20rem;
+  color: var(--text-color);
+  opacity: 0.1;
+  z-index: -1;
+}
+.home-content p {
+  font-size: 1.6rem;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+}
+.btn {
+  display: inline-block;
+  padding: 1rem 2.8rem;
+  background-color: var(--main-color);
+  border-radius: 1rem;
+  box-shadow: none;
+  font-size: 1.6rem;
+  color: var(--bg-color);
+  letter-spacing: 0.1rem;
+  font-weight: 600;
+  transition: 0.5s ease;
+  cursor: pointer;
+}
+.btn:hover {
+  color: var(--text-color);
+  box-shadow: 0 0 1.6rem var(--main-color);
+}
+/* services section */
+.srevices {
+  background-color: var(--snd-bg-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.heading {
+  font-size: 6.5rem;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+.services-content {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.row {
+  width: 425px;
+  height: 325px;
+  margin: 25px 20px;
+  padding: 10px;
+  border-radius: 25px;
+  border: 2px solid black;
+  box-shadow: 1px 1px 10px var(--main-color);
+  transition: all 0.5s ease;
+}
+.row img {
+  width: 19vw;
+  margin: 8px 18px 0 18px;
+  border-radius: 20px;
+}
+.row h4 {
+  font-size: 2.6rem;
+  margin: 10px 0 0 25px;
+}
+.row:hover {
+  transform: scale(1.1);
+  border: 1px solid var(--main-color);
+}
+.about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.about-img img {
+  width: 50vw;
+  border: 2px solid var(--text-color);
+}
+.about-dtls {
+  padding: 0 3rem;
+}
+.about-dtls h2 {
+  font-size: 6rem;
+  text-align: left;
+  line-height: 1.2;
+}
+.about p {
+  font-size: 1.6rem;
+  margin: 2rem 0 2rem;
+}
+
+.plans {
+  background-color: var(--snd-bg-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.plans-content {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+.cards {
+  border: 2px solid black;
+  border-radius: 30px;
+  box-shadow: 1px 1px 10px var(--main-color);
+  transition: all 0.5s ease;
+  width: 30%;
+  min-width: 450px;
+  height: 380px;
+}
+.cards h3 {
+  font-size: 4rem;
+  margin: 25px 0 10px 30px;
+  font-weight: 600;
+}
+.cards h2 {
+  font-size: 4.4rem;
+  margin: 0 0 15px 30px;
+  font-weight: 600;
+}
+.cards ul li {
+  list-style-type: disc;
+  margin: 0 0 15px 35px;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+.cards a {
+  display: inline-block;
+  color: var(--text-color);
+  font-size: 22px;
+  font-weight: 700;
+  padding: 7px 0;
+  margin-left: 25px;
+  border-bottom: 2px solid #5d6c83;
+  transition: all 0.5s ease;
+}
+.cards i {
+  vertical-align: middle;
+  font-size: 25px;
+  color: var(--main-color);
+  margin-left: 5px;
+}
+.cards a:hover {
+  border-bottom: 2px solid var(--main-color);
+  cursor: pointer;
+}
+
+.cards:hover {
+  border: 1px solid var(--main-color);
+  transform: translateY(-5px) scale(1.03);
+}
+.review {
+  background-color: var(--bg-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.review-box {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  margin-top: 15px;
+}
+.review-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--snd-bg-color);
+  gap: 15px;
+  width: 30%;
+  border: 3px solid rgba(238, 238, 238, 0.3);
+  border-radius: 2rem;
+  min-width: 450px;
+  height: 450px;
+  transition: 0.4s ease-in-out;
+}
+.review-content h3 {
+  font-size: 3.5rem;
+  font-weight: 600;
+  margin: 15px 0 0 26px;
+}
+
+.reviewer img {
+  width: 15rem;
+  border-radius: 50%;
+  border: 3px solid var(--main-color);
+}
+.review-content.stars {
+  margin-right: 8px;
+}
+.review-content .stars #star {
+  color: gold;
+  font-size: 2rem;
+  margin-right: 3px;
+}
+.review-content p {
+  font-size: 15px;
+  line-height: 2.5rem;
+  margin-left: 6rem;
+}
+.review-content:hover {
+  border: 3px solid var(--main-color);
+  transform: translateY(-5px) scale(1.03);
+  cursor: pointer;
+}
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--snd-bg-color);
+  height: 150px;
+}
+.social-icons {
+  text-align: center;
+  padding-bottom: 10px;
+  color: var(--main-color);
+  margin-top: 12px;
+}
+.social-icons a {
+  display: inline-block;
+  font-size: 25px;
+  color: var(--main-color);
+  border: 2px solid var(--main-color);
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  margin: 0 10px;
+  line-height: 42px;
+  transition: 0.3s ease-in-out;
+}
+footer .social-icons a:hover {
+  transform: scale(1.2) translateY(-10px);
+  background-color: var(--main-color);
+  color: #131313;
+  box-shadow: 0 0 25px var(--main-color);
+}
+
+footer p {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 16px;
+  color: #fff;
+}
+
+/* ================ Responsive Design ================ */
+/* Base Mobile Styles (Default) */
+/* Add this at the BOTTOM of your CSS file */
+
+/* Tablets (768px and below) */
+@media (max-width: 768px) {
+  /* General Adjustments */
+  html {
+    font-size: 55%;
+  }
+
+  header {
+    padding: 2rem 5%;
+  }
+
+  /* Mobile Menu */
+  #menu-icon {
+    display: block;
+  }
+
+  .nav-bar {
+    position: absolute;
+    top: 100%;
+    left: -100%;
+    width: 100%;
+    padding: 1rem 5%;
+    background: var(--bg-color);
+    transition: 0.3s ease;
+  }
+
+  .nav-bar.active {
+    left: 0;
+  }
+
+  .nav-bar a {
+    display: block;
+    margin: 1.5rem 0;
+    font-size: 2rem;
+  }
+
+  /* Home Section */
+  .home {
+    flex-direction: column;
+    text-align: center;
+    padding-top: 15rem;
+  }
+
+  .home-img img {
+    width: 70vw;
+  }
+
+  .home-img::before {
+    font-size: 15rem;
+    top: 20%;
+  }
+
+  /* Services Section */
+  .row {
+    width: 100%;
+    height: auto;
+    margin: 2rem 0;
+  }
+
+  .row img {
+    width: 80%;
+    margin: 1rem auto;
+  }
+
+  /* About Section */
+  .about {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-img img {
+    width: 70vw;
+  }
+
+  /* Plans Section */
+  .cards {
+    width: 80%;
+    min-width: unset;
+    height: auto;
+    padding: 2rem;
+    margin: 2rem 0;
+  }
+
+  /* Review Section Fix */
+  .review-box {
+    flex-direction: column;
+    gap: 3rem;
+  }
+
+  .review-content {
+    width: 100%;
+    min-width: unset;
+    height: auto;
+    padding: 2rem;
+  }
+
+  .review-content p {
+    margin-left: 0;
+    text-align: center;
+    padding: 0 1.5rem;
+  }
+}
+
+/* Phones (480px and below) */
+@media (max-width: 480px) {
+  html {
+    font-size: 50%;
+  }
+
+  /* Typography Adjustments */
+  .home-content h1 {
+    font-size: 4.5rem;
+  }
+
+  .home-content h3 {
+    font-size: 3.5rem;
+  }
+
+  .heading {
+    font-size: 5rem;
+  }
+
+  /* Images */
+  .home-img img,
+  .about-img img {
+    width: 90vw;
+  }
+
+  .reviewer img {
+    width: 12rem;
+  }
+
+  /* Cards */
+  .cards {
+    width: 90%;
+  }
+
+  /* Review Content */
+  .review-content h3 {
+    font-size: 3rem;
+  }
+
+  .review-content p {
+    font-size: 1.4rem;
+  }
+}
+
+/* Small Phones (350px and below) */
+@media (max-width: 350px) {
+  html {
+    font-size: 45%;
+  }
+
+  .logo {
+    font-size: 2.5rem;
+  }
+
+  .review-content h3 {
+    font-size: 2.8rem;
+  }
+}
