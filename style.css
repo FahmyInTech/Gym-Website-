@@ -386,6 +386,11 @@ footer p {
 /* Add this at the BOTTOM of your CSS file */
 
 /* Tablets (768px and below) */
+@media (max-width:1200px) {
+  html {
+      font-size: 55%;
+  }
+}
 @media (max-width: 768px) {
   /* General Adjustments */
   html {
@@ -405,10 +410,13 @@ footer p {
     position: absolute;
     top: 100%;
     left: -100%;
-    width: 100%;
-    padding: 1rem 5%;
+    width: 225px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    
     background: var(--bg-color);
-    transition: 0.3s ease;
+    transition: all 0.5s ease;
   }
 
   .nav-bar.active {
@@ -417,8 +425,10 @@ footer p {
 
   .nav-bar a {
     display: block;
-    margin: 1.5rem 0;
+    padding: 17px;
+    margin: 1.6rem 2rem;
     font-size: 2rem;
+    font-weight: 600;
   }
 
   /* Home Section */
