@@ -3,219 +3,234 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
-      rel="stylesheet"
-    />
+    <meta name="description" content="Royal Fitness - Build your dream physique with our expert trainers and smart workout plans." />
+    <!-- Google Fonts: Outfit -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Boxicons -->
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="style.css" />
-    <title>Royal Fitness</title>
+    <title>Royal Fitness | Premium Gym Experience</title>
   </head>
   <body>
     <!-- header section -->
     <header>
-      <a href="#home" class="logo">Royal <span>Fitness</span> </a>
-      <div class="bx bx-menu" id="menu-icon">
-        <i class="fa-solid fa-bars"></i>
-      </div>
-      <ul class="nav-bar">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#about">About Us</a></li>
-        <li><a href="#plans">Pricing</a></li>
-        <li><a href="#review">Review</a></li>
-      </ul>
+      <a href="#home" class="logo">Royal <span>Fitness</span></a>
+      <div class="bx bx-menu" id="menu-icon" aria-label="Toggle Menu"></div>
+      
+      <nav>
+        <ul class="nav-bar">
+          <li><a href="#home" class="active">Home</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#plans">Pricing</a></li>
+          <li><a href="#review">Review</a></li>
+        </ul>
+      </nav>
+      
       <div class="main-btn">
         <a href="#plans" class="nav-btn">Join Us</a>
       </div>
     </header>
-    <!-- Home section -->
-    <section class="home" id="home">
-      <div class="home-content">
-        <h3>Build Your</h3>
-        <h1>Dream Physique</h1>
-        <h3><span class="muliple-text">Bodybuilding</span></h3>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam
-          consectetur amet fuga mollitia harum at.
-        </p>
-        <a href="#plans" class="btn">Join Us</a>
-      </div>
-      <div class="home-img">
-        <img src="img/heroImage.png" alt="Home Image"loading="lazy" 
-        decoding="async" />
-      </div>
-    </section>
-    <!-- srevices section  -->
-    <section class="srevices" id="services">
-      <h2 class="heading">our <span>services</span></h2>
-      <div class="services-content">
-        <div class="row">
-          <img src="img/image1.jpg" alt="" loading="lazy" 
-          decoding="async" />
-          <h4>Physical Fitness</h4>
-        </div>
-        <div class="row">
-          <img src="img/image2.jpg" alt=""  loading="lazy" 
-          decoding="async"/>
-          <h4>Weight Gain</h4>
-        </div>
-        <div class="row">
-          <img src="img/image3.jpg" alt=""  loading="lazy" 
-          decoding="async"/>
-          <h4>Strength Training</h4>
-        </div>
-        <div class="row">
-          <img src="img/image4.jpg" alt="" loading="lazy" 
-          decoding="async"/>
-          <h4>Fat Lose</h4>
-        </div>
-        <div class="row">
-          <img src="img/image5.jpg" alt="" loading="lazy" 
-          decoding="async"/>
-          <h4>Weightlifting</h4>
-        </div>
-        <div class="row">
-          <img src="img/about.jpg" alt="" loading="lazy" 
-          decoding="async"/>
-          <h4>Running</h4>
-        </div>
-      </div>
-    </section>
-    <!-- About section -->
-    <section class="about" id="about">
-      <div class="about-img">
-        <img src="img/about.jpg" alt="" loading="lazy" 
-        decoding="async"/>
-      </div>
-      <div class="about-dtls">
-        <h2>Why Choose Us?</h2>
-        <p>
-          Our diverse membership base creates a friendly and supportive
-          atmosphere, where you can make friends and stay motivated.
-        </p>
-        <p>Unlock your potential with our expert Personal Trainers.</p>
-        <p>Elevate your fitness with practice sessions.</p>
-        <p>We provide Supportive management, for your fitness success.</p>
-        <a href="#" class="btn">Book A Free Class</a>
-      </div>
-    </section>
-    <!-- plans section -->
-    <section class="plans" id="plans">
-      <h2 class="heading">our <span>plans</span></h2>
-      <div class="plans-content">
-        <div class="cards">
-          <h3>Basic</h3>
-          <h2><span>$100/Month</span></h2>
-          <ul>
-            <li>Smart workout plan</li>
-            <li>At home workouts</li>
-          </ul>
 
-          <a href="#">
-            Join Now
-            <i class="bx bx-right-arrow-alt"></i>
-          </a>
+    <main>
+      <!-- Home section -->
+      <section class="home" id="home">
+        <div class="home-content reveal fade-left">
+          <h3>Build Your</h3>
+          <h1>Dream Physique</h1>
+          <h3><span class="muliple-text">Bodybuilding</span></h3>
+          <p>
+            Elevate your training with state-of-the-art facilities, expert coaching, and a community dedicated to excellence. Your transformation begins here.
+          </p>
+          <a href="#plans" class="btn">Start Your Journey</a>
         </div>
-        <div class="cards">
-          <h3>pro</h3>
-          <h2><span>$150/Month</span></h2>
-          <ul>
-            <li>Pro GYMS</li>
-            <li>Smart workout plan</li>
-            <li>At home workouts</li>
-          </ul>
+        <div class="home-img reveal fade-right">
+          <img src="img/heroImage.png" alt="Fitness Model" fetchpriority="high" decoding="async" />
+        </div>
+      </section>
 
-          <a href="#">
-            Join Now
-            <i class="bx bx-right-arrow-alt"></i>
-          </a>
+      <!-- services section  -->
+      <section class="services" id="services">
+        <h2 class="heading reveal fade-up">Our <span>Services</span></h2>
+        <div class="services-content">
+          <article class="row reveal fade-up" style="transition-delay: 0.1s;">
+            <div class="img-wrapper">
+              <img src="img/image1.jpg" alt="Physical Fitness" loading="lazy" decoding="async" />
+            </div>
+            <h4>Physical Fitness</h4>
+          </article>
+          <article class="row reveal fade-up" style="transition-delay: 0.2s;">
+            <div class="img-wrapper">
+              <img src="img/image2.jpg" alt="Weight Gain" loading="lazy" decoding="async"/>
+            </div>
+            <h4>Weight Gain</h4>
+          </article>
+          <article class="row reveal fade-up" style="transition-delay: 0.3s;">
+            <div class="img-wrapper">
+              <img src="img/image3.jpg" alt="Strength Training" loading="lazy" decoding="async"/>
+            </div>
+            <h4>Strength Training</h4>
+          </article>
+          <article class="row reveal fade-up" style="transition-delay: 0.4s;">
+            <div class="img-wrapper">
+              <img src="img/image4.jpg" alt="Fat Lose" loading="lazy" decoding="async"/>
+            </div>
+            <h4>Fat Loss</h4>
+          </article>
+          <article class="row reveal fade-up" style="transition-delay: 0.5s;">
+            <div class="img-wrapper">
+              <img src="img/image5.jpg" alt="Weightlifting" loading="lazy" decoding="async"/>
+            </div>
+            <h4>Weightlifting</h4>
+          </article>
+          <article class="row reveal fade-up" style="transition-delay: 0.6s;">
+            <div class="img-wrapper">
+              <img src="img/about.jpg" alt="Running" loading="lazy" decoding="async"/>
+            </div>
+            <h4>Cardio & Running</h4>
+          </article>
         </div>
-        <div class="cards">
-          <h3>PREMIUM</h3>
-          <h2><span>$300/Month</span></h2>
-          <ul>
-            <li>ELITE Gyms & Classes</li>
-            <li>Pro GYMS</li>
-            <li>Smart workout plan</li>
-            <li>At home workouts</li>
-            <li>Personal Training</li>
-          </ul>
+      </section>
 
-          <a href="#">
-            Join Now
-            <i class="bx bx-right-arrow-alt"></i>
-          </a>
+      <!-- About section -->
+      <section class="about" id="about">
+        <div class="about-img reveal fade-right">
+          <img src="img/about.jpg" alt="About Royal Fitness" loading="lazy" decoding="async"/>
+          <div class="glow-backdrop"></div>
         </div>
-      </div>
-    </section>
-    <!-- review secrtion -->
-    <section class="review" id="review">
-      <h2 class="heading">Client Reviews</h2>
-      <div class="review-box">
-        <div class="review-content">
-          <div class="reviewer">
-            <img src="img/1.jpg" alt="" loading="lazy" 
-            decoding="async"/>
-            <h3>John</h3>
-          </div>
-          <div class="stars">
-            <i class="bx bxs-star" id="star"></i>
-            <i class="bx bxs-star" id="star"></i>
-            <i class="bx bxs-star" id="star"></i>
-            <i class="bx bxs-star" id="star"></i>
-            <i class="bx bxs-star" id="star"></i>
-          </div>
-          <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius
-            reiciendis consequatur officia recusandae porro at?
-          </p>
+        <div class="about-dtls reveal fade-left">
+          <h2 class="heading">Why <span>Choose Us?</span></h2>
+          <ul class="about-list">
+            <li>
+              <i class='bx bx-check-shield'></i>
+              <p>Our diverse membership base creates a friendly and supportive atmosphere.</p>
+            </li>
+            <li>
+              <i class='bx bx-dumbbell'></i>
+              <p>Unlock your potential with our expert Personal Trainers.</p>
+            </li>
+            <li>
+              <i class='bx bx-trending-up'></i>
+              <p>Elevate your fitness with dedicated practice sessions and smart tracking.</p>
+            </li>
+          </ul>
+          <a href="#plans" class="btn">Book A Free Class</a>
         </div>
-        <div class="review-content">
-          <div class="reviewer">
-            <img src="img/2.jpg" alt="" loading="lazy" 
-            decoding="async"/>
-            <h3>Steve</h3>
-          </div>
-          <div class="stars">
-            <i class="bx bxs-star" id="star"></i>
-            <i class="bx bxs-star" id="star"></i>
-            <i class="bx bxs-star" id="star"></i>
-            <i class="bx bxs-star" id="star"></i>
-            <i class="bx bxs-star" id="star"></i>
-          </div>
-          <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius
-            reiciendis consequatur officia recusandae porro at?
-          </p>
+      </section>
+
+      <!-- plans section -->
+      <section class="plans" id="plans">
+        <h2 class="heading reveal fade-up">Membership <span>Plans</span></h2>
+        <div class="plans-content">
+          <article class="cards reveal fade-up" style="transition-delay: 0.1s;">
+            <h3>Basic</h3>
+            <h2><span>$100</span><small>/Month</small></h2>
+            <ul>
+              <li><i class='bx bx-check'></i> Smart workout plan</li>
+              <li><i class='bx bx-check'></i> At home workouts</li>
+              <li class="disabled"><i class='bx bx-x'></i> Pro GYMS access</li>
+              <li class="disabled"><i class='bx bx-x'></i> Personal Training</li>
+            </ul>
+            <a href="#" class="plan-btn">Join Now <i class="bx bx-right-arrow-alt"></i></a>
+          </article>
+          
+          <article class="cards pro-card reveal fade-up" style="transition-delay: 0.2s;">
+            <div class="badge">Most Popular</div>
+            <h3>Pro</h3>
+            <h2><span>$150</span><small>/Month</small></h2>
+            <ul>
+              <li><i class='bx bx-check'></i> Pro GYMS access</li>
+              <li><i class='bx bx-check'></i> Smart workout plan</li>
+              <li><i class='bx bx-check'></i> At home workouts</li>
+              <li class="disabled"><i class='bx bx-x'></i> Personal Training</li>
+            </ul>
+            <a href="#" class="plan-btn active">Join Now <i class="bx bx-right-arrow-alt"></i></a>
+          </article>
+          
+          <article class="cards reveal fade-up" style="transition-delay: 0.3s;">
+            <h3>Premium</h3>
+            <h2><span>$300</span><small>/Month</small></h2>
+            <ul>
+              <li><i class='bx bx-check'></i> ELITE Gyms & Classes</li>
+              <li><i class='bx bx-check'></i> Pro GYMS access</li>
+              <li><i class='bx bx-check'></i> Smart workout plan</li>
+              <li><i class='bx bx-check'></i> At home workouts</li>
+              <li><i class='bx bx-check'></i> Personal Training</li>
+            </ul>
+            <a href="#" class="plan-btn">Join Now <i class="bx bx-right-arrow-alt"></i></a>
+          </article>
         </div>
-        <div class="review-content">
-          <div class="reviewer">
-            <img src="img/3.jpg" alt="" loading="lazy" 
-            decoding="async"/>
-            <h3>David</h3>
-          </div>
-          <div class="stars">
-            <i class="bx bxs-star" id="star"></i>
-            <i class="bx bxs-star" id="star"></i>
-            <i class="bx bxs-star" id="star"></i>
-            <i class="bx bxs-star" id="star"></i>
-            <i class="bx bxs-star" id="star"></i>
-          </div>
-          <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius
-            reiciendis consequatur officia recusandae porro at?
-          </p>
+      </section>
+
+      <!-- review section -->
+      <section class="review" id="review">
+        <h2 class="heading reveal fade-up">Client <span>Reviews</span></h2>
+        <div class="review-box">
+          <article class="review-content reveal fade-up" style="transition-delay: 0.1s;">
+            <div class="reviewer-header">
+              <img src="img/1.jpg" alt="John" loading="lazy" decoding="async"/>
+              <div>
+                <h3>John Doe</h3>
+                <div class="stars">
+                  <i class="bx bxs-star"></i><i class="bx bxs-star"></i><i class="bx bxs-star"></i><i class="bx bxs-star"></i><i class="bx bxs-star"></i>
+                </div>
+              </div>
+            </div>
+            <p>
+              "The personal trainers here are top-notch. I've seen more progress in 3 months than I did in an entire year on my own!"
+            </p>
+            <i class='bx bxs-quote-right quote-icon'></i>
+          </article>
+          
+          <article class="review-content reveal fade-up" style="transition-delay: 0.2s;">
+            <div class="reviewer-header">
+              <img src="img/2.jpg" alt="Steve" loading="lazy" decoding="async"/>
+              <div>
+                <h3>Steve Smith</h3>
+                <div class="stars">
+                  <i class="bx bxs-star"></i><i class="bx bxs-star"></i><i class="bx bxs-star"></i><i class="bx bxs-star"></i><i class="bx bxs-star"></i>
+                </div>
+              </div>
+            </div>
+            <p>
+              "The facilities are always clean and the equipment is state-of-the-art. Highly recommend the Pro plan for the best value."
+            </p>
+            <i class='bx bxs-quote-right quote-icon'></i>
+          </article>
+          
+          <article class="review-content reveal fade-up" style="transition-delay: 0.3s;">
+            <div class="reviewer-header">
+              <img src="img/3.jpg" alt="David" loading="lazy" decoding="async"/>
+              <div>
+                <h3>David Miller</h3>
+                <div class="stars">
+                  <i class="bx bxs-star"></i><i class="bx bxs-star"></i><i class="bx bxs-star"></i><i class="bx bxs-star"></i><i class="bx bxs-star-half"></i>
+                </div>
+              </div>
+            </div>
+            <p>
+              "Great atmosphere and a very supportive community. I love the group classes and the energy everyone brings."
+            </p>
+            <i class='bx bxs-quote-right quote-icon'></i>
+          </article>
         </div>
-      </div>
-    </section>
+      </section>
+    </main>
+
     <!-- footer section -->
     <footer>
-      <div class="social-icons">
-        <a href="#"><i class="bx bxl-instagram-alt"></i></a>
-        <a href="#"><i class="bx bxl-facebook-square"></i></a>
-        <a href="#"><i class="bx bxl-linkedin-square"></i></a>
+      <div class="footer-content reveal fade-up">
+        <a href="#home" class="logo">Royal <span>Fitness</span></a>
+        <div class="social-icons">
+          <a href="#" aria-label="Instagram"><i class="bx bxl-instagram-alt"></i></a>
+          <a href="#" aria-label="Facebook"><i class="bx bxl-facebook"></i></a>
+          <a href="#" aria-label="LinkedIn"><i class="bx bxl-linkedin"></i></a>
+          <a href="#" aria-label="Twitter"><i class="bx bxl-twitter"></i></a>
+        </div>
+        <p class="copyright">&copy; <span id="year">2025</span> Royal Fitness. All Rights Reserved.</p>
       </div>
-      <p class="copyright">&copy; Royal Fitness 2025 - All Rights Reserved</p>
     </footer>
     <script src="script.js"></script>
   </body>
